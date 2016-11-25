@@ -11,8 +11,8 @@ configure:
 	$(SH)/dnsmasq-configure.sh
 
 start:
-	$(K) apply -f platform/
 	minikube dashboard
+	$(K) apply -f platform/
 	open http://ghost.dev
 
 install:
